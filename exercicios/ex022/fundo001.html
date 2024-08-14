@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagens em FUNDOS</title>
+    <style>
+        body{
+            background-image: url('images/wallpaper001.jpg');
+        }
+        div.quadrado {
+            margin: 20px;
+            display: block;
+            float: left;
+            border-radius: 18px;
+            background-color: lightgrey;
+            border: 1px solid black;
+            width: 300px;
+            height: 300px;
+            align-content: center;
+                        
+        }
+
+        div a:hover{
+            background-color: rgb(166, 75, 252);
+            transition-duration: 1s;
+        }
+
+        .button{
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            max-width: 60%;
+            margin: auto;
+            
+            text-align: center;
+            display: block;
+            background-color: blueviolet;
+            
+        }
+
+        div#q1{
+            background-color: skyblue;
+        }
+        div#q2{
+            background-image: linear-gradient(to bottom, yellow, red);
+        }
+        div#q3{
+            background-image: url('images/pattern004.png');
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1">
+        <a href="#" class="button">Play</a>
+        <a href="#" class="button">Jogar</a>
+    </div>
+    <div class="quadrado" id="q2"></div>
+    <div class="quadrado" id="q3"></div>
+    
+</body>
+</html>
