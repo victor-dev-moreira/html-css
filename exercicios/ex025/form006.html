@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Exemplos De Formularios</h1>
+
+    <!-- Sempre que utilizar elementos que enviam mais de 3000 bits UTILIZAR METODO 'POST' -->
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="icor">Cor</label>
+            <input type="color" name="cor" id="icor">
+        </p>
+
+        <p>
+            <label for="inivel">Nivel De Satisfação</label>
+            <input type="range" name="Nivel" id="inivel" min="1" max="5" value="1">
+        </p>
+
+        <p>
+            <label for="ifoto">Foto</label>
+            <input type="file" name="Foto" id="ifoto">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
