@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+/* Todas as demais midias */
+
+/* Typical Device Breakpoints 
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+desktop: 992px até 1200px
+TV: acima de 1200px
+
+*/
+
+@media print { /* IMPERSSÃO */
+
+    *{
+        font-family: 'Courier New', Courier, monospace;
+        
+    }
+
+    body{
+        background-image: url(../imagens/back-print.jpg); /* Desnecessario / Não imprime*/
+        
+    }
+
+    main{
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after{
+        content: 'Essa Impressão foi feita por Victor FUTURO DEV';
+        text-decoration: overline;
+
+    }
+
+    img#tablet {display: none;}
+    img#pc {display: none;}
+    img#print {display: block;}
+    img#phone {display: none;}
+    img#tv {display: none;}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){ /*  TABLET*/
+
+        body{
+            background-image: url(../imagens/back-tablet.jpg);
+
+        }
+
+        img#tablet {display: block;}
+        img#pc {display: none;}
+        img#print {display: none;}
+        img#phone {display: none;}
+        img#tv {display: none;}
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){ /* DESKTOP */
+
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+
+    }
+
+    img#tablet {display: none;}
+    img#pc {display: block;}
+    img#print {display: none;}
+    img#phone {display: none;}
+    img#tv {display: none;}
+
+
+}
+
+@media screen and (min-width: 1200px){ /* GRANDES TELAS */
+
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main{
+        width: 800px;
+    }
+
+    img#tablet {display: none;}
+    img#pc {display: none;}
+    img#print {display: none;}
+    img#phone {display: none;}
+    img#tv {display: block;}
+
+
+}
+
+/* @media screen and (max-width: 600px){
+
+    
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+
+    
+} */
