@@ -31,4 +31,9 @@ TV: acima de 1200px
 
     }
 
+    menu ul > li > a {
+        border-radius: 10px;
+        
+    }
+
 }
