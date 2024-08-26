@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+section#login {
+    display: block;    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 515px;
+    background-color: green;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+section#login > div#imagem{    
+    background: black url(../image/image.jpg);
+    background-position: bottom center;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+
+section#login > div#form{
+    display: block;
+    
+}
+
+section#login > div#form > h1 {
+    text-align: center;
+    
+
+}
+
+div#campo{
+    
+}
+
