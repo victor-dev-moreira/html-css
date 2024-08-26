@@ -11,9 +11,11 @@ main{
     position: relative;
     width: 100vw;
     height: 100vh;
+    background-color: #F2D22E;
 }
 
 section#login {
+    
     display: block;    
     position: absolute;
     left: 50%;
@@ -21,7 +23,7 @@ section#login {
     transform: translate(-50%, -50%);
     width: 250px;
     height: 515px;
-    background-color: green;
+    background-color: #F2C029;
     overflow: hidden;
     border-radius: 20px;
 }
@@ -36,17 +38,61 @@ section#login > div#imagem{
 }
 
 section#login > div#form{
+    margin: auto;
+    border-radius: 10px;    
     display: block;
+    
+    width: 80%;
+
     
 }
 
 section#login > div#form > h1 {
+    margin: 10px 0px;
     text-align: center;
     
 
 }
 
+section#login > div#form > p{
+    margin: 20px 0px;
+}
+
+
+
 div#campo{
+    overflow: hidden;
+    border-radius: 5px;
+    margin: auto;
+    background-color: #bb9522;
+    width: 90%;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+div#campo > span{
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    background-color: black;
+    width: 30px;
+}
+
+div#campo > label{
+    display: none;
+}
+
+div#campo > input{      
+    width: calc(100% - 39px);
+    height: 80%;
+    margin: auto;
+}
+
+form > input[type=submit]{
     
+    width: 90%;
+    height: 40px;
+    border: none;
+
 }
 
