@@ -15,7 +15,6 @@
         div.item {
             background-color: blanchedalmond;
             border: 1px solid black;
-            flex-basis: 200px;
             text-align: center;
             padding-bottom: 20px;
             
@@ -23,18 +22,15 @@
         }
 
         div#cxA {
-            flex-shrink: 0;
-            flex-grow: 1;
+            flex: 0 1 200px;
         }
 
         div#cxB {
-            flex-shrink: 1;
-            flex-grow: 4;
+            flex: 4 1 200px;
         }
 
         div#cxC {
-            flex-shrink: 1;
-            flex-grow: 1;
+            flex: 1 1 200px;
         }
 
         div.conteiner1{
@@ -43,8 +39,10 @@
             flex-flow: row nowrap;
         }
         div#cxA2 {
-            flex-shrink: 1;
-            flex-grow: 2;
+            /*flex-shrink: 1;
+            flex-grow: 2;*/
+
+            flex: 2 1 200px;
         }
 
         div#cxB2 {
